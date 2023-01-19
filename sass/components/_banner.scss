@@ -1,0 +1,33 @@
+.banner {
+  background-color: $dark-gray-color;
+  height: 600px;
+  background-image: url('../images/background.jpg');
+  background-image: linear-gradient(to top black);
+
+  &__title-solutions {
+    color: $pure-white-color;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin: 0px 237px;
+    padding-top: 106px;
+  }
+
+  &__title-order-button {
+    color: $pure-white-color;
+    background-color: $blue-color;
+    margin: 30px 485px 200px 485px;
+    padding: 10px 41px 10px 41px;
+    width: 200px;
+
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}

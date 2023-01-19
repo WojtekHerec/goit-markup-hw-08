@@ -1,0 +1,35 @@
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  background-color: $button-color;
+  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
+}
+.our-strengths {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &__list {
+    display: flex;
+    padding-left: 0px;
+    padding-bottom: 94px;
+    gap: 30px;
+    background-color: $pure-white-color;
+    list-style: none;
+  }
+
+  &__list-title {
+    line-height: 1.17;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  &__list-paragraf {
+    color: $light-grey-color;
+    line-height: 1.71;
+    font-size: 14px;
+    width: 270px;
+  }
+}

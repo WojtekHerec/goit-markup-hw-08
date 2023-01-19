@@ -1,0 +1,39 @@
+.our-clients-title {
+  line-height: 1.17;
+  font-weight: 700;
+  font-size: 36px;
+  width: 201px;
+  height: 42px;
+  text-align: center;
+  margin: 0px 483px 50px 486px;
+}
+.our-clients-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.icon-yaco,
+.icon-brand,
+.icon-company,
+.icon-company-tag-line-here,
+.icon-company-tag-line,
+.icon-foster-peter {
+  width: 106px;
+  height: 60px;
+}
+
+.our-clients-list-item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid $icon-grey-color;
+  fill: currentColor;
+  transition-property: filter;
+
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-clients-list-item:hover,
+.our-clients-list-item:focus {
+  filter: invert(44%) s;
+}

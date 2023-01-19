@@ -1,0 +1,33 @@
+@use './utils/vars' as *;
+@import './components/navigation';
+@import './components/banner';
+@import './components/our-strengths';
+@import './components/page';
+@import './components/window';
+@import './components/our-job';
+@import './components/team';
+@import './components/our-clients';
+@import './components/footer';
+@import './components/portfolio-buttons';
+@import './components/portfolio-project';
+
+body {
+  background-color: $pure-white-color;
+  font-family: 'Roboto', sans-serif;
+  color: $main-color;
+  letter-spacing: 0.03em;
+}
+
+.page {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0px 215px 0px 215px;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}

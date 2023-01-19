@@ -1,0 +1,119 @@
+.container-navigation {
+  width: 1600px;
+  border-bottom: 1px solid $border-color;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  &__logo {
+    margin: 24px 93px 25px 0px;
+    font-family: $Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    width: 145px;
+  }
+
+  &__logo-web {
+    color: $blue-color;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 46px;
+    border: 0px;
+    line-height: 1.17;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  &__list-item {
+    position: relative;
+  }
+
+  &__list-element:focus,
+  &__list-element:hover {
+    color: $blue-color;
+    outline: none;
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+    color: $light-grey-color;
+    gap: 30px;
+    margin: 32px 12px 32px 305px;
+
+    transition-property: color;
+
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__links-icon-smartphone {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.navigation__list-element,
+.navigation__logo {
+  text-decoration: none;
+  color: $main-color;
+}
+
+.navigation__links-element:focus,
+.navigation__links-element:hover {
+  color: $blue-color;
+}
+
+.navigation__links-icon-mail :hover,
+.navigation__links-icon-mail :focus,
+.navigation__links-icon-smartphone :focus,
+.navigation__links-icon-smartphone :hover {
+  filter: invert(44%) sepia(65%) saturate(2166%) hue-rotate(186deg) brightness(101%) contrast(91%);
+}
+
+.portfolio-active,
+.agency-active {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agency-active:hover:after,
+.agency-active:focus:after,
+.portfolio-active:focus:after,
+.portfolio-active:hover:after {
+  content: '';
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: $blue-color;
+  border-radius: 2px;
+  position: absolute;
+  top: 44px;
+}
+
+.navigation__links-phone {
+  width: 130px;
+}
+
+.navigation__links-mail {
+  width: 161px;
+}
+
+.navigation__links-element {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(117, 117, 117, 1);
+  letter-spacing: 0.02em;
+  height: 16px;
+  text-decoration: none;
+}

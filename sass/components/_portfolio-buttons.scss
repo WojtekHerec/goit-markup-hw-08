@@ -1,0 +1,57 @@
+.box {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.box:hover,
+.box:focus {
+  box-sizing: border-box;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.button-list-input:hover,
+.button-list-input:focus {
+  cursor: pointer;
+  background-color: $blue-color;
+  color: $pure-white-color;
+}
+
+.button-list-input:focus,
+.button-list-input:hover {
+  background-color: $blue-color;
+  color: $pure-white-color;
+}
+
+.button-list {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  padding-right: 8px;
+  margin: 0px 303px 50px 285px;
+}
+
+.button-list-input {
+  padding: 6px 22px 6px 22px;
+  width: 121px;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
+  color: $main-color;
+  background-color: $button-color;
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
+  transition-property: color, background-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-list :focus,
+.button-list :hover {
+  background-color: $blue-color;
+  color: $pure-white-color;
+  outline: none;
+}

@@ -1,0 +1,88 @@
+.team {
+  background-color: $white-color;
+}
+
+.team-title {
+  color: $main-color;
+  margin: 0px 480px 50px 480px;
+  font-size: 36px;
+  font-weight: 700;
+  width: 210px;
+}
+
+.team-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  gap: 30px;
+}
+
+.team-list-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 270px;
+  text-align: center;
+  background-color: $pure-white-color;
+  text-align: center;
+}
+
+.team-list-item {
+  padding-bottom: 30px;
+  margin-top: 0px;
+  background-color: $pure-white-color;
+}
+
+.team-list-title {
+  margin: 0px;
+  padding-top: 30px;
+  line-height: 1.17;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.team-list-paragraf {
+  color: $light-grey-color;
+  line-height: 1.17;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.team-list-social-links {
+  width: 206px;
+  height: 44px;
+
+  margin: 16px 32px 0px;
+  justify-content: center;
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.icons-ring {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: color, background-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  color: $icon-grey-color;
+}
+
+.icons-ring:hover,
+.icons-ring:focus {
+  background-color: $blue-color;
+  --color1: #fff;
+}
+
+.icons-our-team {
+  width: 20px;
+  height: 20px;
+  fill: $light-grey-color;
+}
