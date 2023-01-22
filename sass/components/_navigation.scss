@@ -6,37 +6,37 @@
     padding-right: 0px;
     justify-content: flex-start;
   }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: flex-start;
+
+    &__logo {
+      margin: 24px 0px 25px s15px;
+      font-family: $Raleway;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.17;
+      width: 145px;
+      text-decoration: none;
+      color: $main-color;
+    }
+
+    &__logo-web {
+      color: $blue-color;
+    }
+    &__list {
+      display: none;
+    }
+    &__links {
+      display: none;
+    }
+  }
 }
-.navigation {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  padding-left: 0px;
-  padding-right: 0px;
-  justify-content: flex-start;
-
-  &__logo {
-    margin: 24px 0px 25px s15px;
-    font-family: $Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.17;
-    width: 145px;
-    text-decoration: none;
-    color: $main-color;
-  }
-
-  &__logo-web {
-    color: $blue-color;
-  }
-  &__list {
-    display: none;
-  }
-  &__links {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .navigation__list-element {
     text-decoration: none;
@@ -108,6 +108,8 @@
       font-size: 26px;
       line-height: 1.17;
       width: 145px;
+      text-decoration: none;
+      color: $main-color;
     }
 
     &__logo-web {
@@ -142,7 +144,7 @@
 
       flex-direction: column;
       gap: 10px;
-      margin: 21px 15px 21px 101px;
+      margin: 21px 15px 21px 75px;
       transition-property: color;
 
       transition-duration: 250ms;
@@ -227,7 +229,8 @@
       font-weight: 700;
       font-size: 26px;
       line-height: 1.17;
-      width: 145px;
+      text-decoration: none;
+      color: $main-color;
     }
 
     &__logo-web {
