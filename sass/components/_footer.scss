@@ -33,6 +33,9 @@
     color: $blue-color;
   }
 }
+.bottom-desktop {
+  padding-top: 60px;
+}
 .join-us-title {
   color: $pure-white-color;
   width: 113px;
@@ -311,7 +314,7 @@
     justify-content: center;
     width: 570px;
     margin-left: 78px;
-    padding-top: 12px;
+    padding-top: 65px;
   }
 
   .footer-box-title {
@@ -369,6 +372,9 @@
     margin-bottom: 60px;
     color: white;
   }
+  .footer-box {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -383,6 +389,6 @@
     width: 768px;
   }
   .footer-box {
-    padding: 0px 60px 60px;
+    padding: 60px;
   }
 }
