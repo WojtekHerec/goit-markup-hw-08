@@ -1,20 +1,14 @@
 @media screen and (min-width: 360px) {
-  .bottom {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: block;
-  }
-
-  .address-logo-web {
-    color: $blue-color;
-  }
-
   .address-logo {
     font-family: $Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
     width: 145px;
+
+    &__web {
+      color: $blue-color;
+    }
   }
 
   .address-bottom {
@@ -23,16 +17,6 @@
     &__container {
       padding: 60px 15px;
       cursor: pointer;
-    }
-
-    &__third-header {
-      margin-bottom: 20px;
-      text-align: center;
-      color: $pure-white-color;
-    }
-
-    &__center {
-      align-items: center;
     }
   }
 
