@@ -64,6 +64,25 @@
               >
             </li>
           </ul>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </header>
       </div>
       <main>
@@ -223,7 +242,7 @@
             <ul class="team-list">
               <li class="team-list-card">
                 <img
-                  src="images/johndoered.jpg"
+                  src="images/team/johndoered.jpg"
                   alt="facet w bordowej koszuli"
                   width="270"
                   height="260"
@@ -259,7 +278,7 @@
                 </div>
               </li>
               <li class="team-list-card">
-                <img src="images/johndoewoman.jpg" alt="kobieta" width="270" height="260" />
+                <img src="images/team/johndoewoman.jpg" alt="kobieta" width="270" height="260" />
                 <div class="team-list-item">
                   <h4 class="team-list-title">Shannon Boyd</h4>
                   <p class="team-list-paragraf">Frontend Developer</p>
@@ -292,7 +311,7 @@
               </li>
               <li class="team-list-card">
                 <img
-                  src="images/johndoeblue.jpg"
+                  src="images/team/johndoeblue.jpg"
                   alt="facet w niebieskiej koszuli"
                   width="270"
                   height="260"
@@ -330,7 +349,7 @@
 
               <li class="team-list-card">
                 <img
-                  src="images/johndoeblack.jpg"
+                  src="images/team/johndoeblack.jpg"
                   alt="facet w czarnej koszuli"
                   width="270"
                   height="260"
@@ -426,44 +445,46 @@
       </main>
       <footer class="address-bottom">
         <div class="container bottom">
-          <div>
-            <a class="address-logo" href="index.html"
-              ><span class="address-logo-web">Web</span>Studio</a
-            >
-            <address>
-              <ul class="address-link-phone-mail">
-                <span>m. Warszawa, Aleje Jerozolimskie 21</span>
+          <div class="bottom-desktop">
+            <div>
+              <a class="address-logo" href="index.html"
+                ><span class="address-logo-web">Web</span>Studio</a
+              >
+              <address>
+                <ul class="address-link-phone-mail">
+                  <span>m. Warszawa, Aleje Jerozolimskie 21</span>
 
-                <li><a class="address-element" href="#">info@example.com</a></li>
-                <li><a class="address-element" href="#">+48 111 111 111</a></li>
+                  <li><a class="address-element" href="#">info@example.com</a></li>
+                  <li><a class="address-element" href="#">+48 111 111 111</a></li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="join-us">
+              <span class="join-us-title">DOłĄCZ DO NAS</span>
+              <ul class="footer-social-links">
+                <li class="icons-ring-bottom">
+                  <svg class="icons-join-us">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="icons-ring-bottom">
+                  <svg class="icons-join-us">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="icons-ring-bottom">
+                  <svg class="icons-join-us">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="icons-ring-bottom">
+                  <svg class="icons-join-us">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
               </ul>
-            </address>
-          </div>
-
-          <div class="join-us">
-            <span class="join-us-title">DOłĄCZ DO NAS</span>
-            <ul class="footer-social-links">
-              <li class="icons-ring-bottom">
-                <svg class="icons-join-us">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </li>
-              <li class="icons-ring-bottom">
-                <svg class="icons-join-us">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </li>
-              <li class="icons-ring-bottom">
-                <svg class="icons-join-us">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </li>
-              <li class="icons-ring-bottom">
-                <svg class="icons-join-us">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="footer-box">
             <span class="footer-box-title">ZAPISZ SIĘ DO NEWSLETTERA</span>
@@ -482,6 +503,47 @@
         </div>
       </footer>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Agencja</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Kontakt</a></li>
+      </ul>
+      <ul class="mobile-menu-phone">
+        <li><a href="" class="link">+48 111 111 111</a></li>
+        <li><a href="" class="link">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu-social">
+        <li><a href="" class="link">Instagram</a></li>
+        <li><a href="" class="link">Twitter</a></li>
+        <li><a href="" class="link">Facebook</a></li>
+        <li><a href="" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

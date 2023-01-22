@@ -135,9 +135,9 @@
   position: absolute;
   z-index: 2;
   left: 11px;
-  top: 39px;
-  height: 18px;
-  width: 18px;
+  top: 43px;
+  height: 12px;
+  width: 12px;
 }
 
 .modal-form-textarea {
@@ -277,4 +277,19 @@
 .modal-button-position {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 360px) and (max-width: 1200px) {
+  .modal-box {
+    width: 450px;
+    height: 609px;
+  }
+
+  .modal-form-box,
+  .modal-form-textarea,
+  .form-element {
+    width: 370px;
+  }
+  .modal-form-title {
+    padding: 0px 40px;
+  }
 }

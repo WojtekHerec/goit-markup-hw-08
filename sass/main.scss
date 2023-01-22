@@ -10,6 +10,7 @@
 @import './components/footer';
 @import './components/portfolio-buttons';
 @import './components/portfolio-project';
+@import './components/mobile-menu';
 
 body {
   background-color: $pure-white-color;
@@ -18,16 +19,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.page {
-  width: 1600px;
-  margin: 0 auto;
-}
-
 .container {
-  padding: 0px 215px 0px 215px;
-}
-
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  min-width: 320px;
+  max-width: 1170px;
 }
