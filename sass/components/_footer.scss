@@ -26,10 +26,17 @@
   &__web {
     color: $blue-color;
   }
+}
+.join-us-title {
+  color: $pure-white-color;
+  width: 113px;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
 
-  @media screen and (min-width: 360px) {
-  }
-
+@media screen and (min-width: 360px) {
   .address-bottom {
     background-color: $dark-gray-color;
     width: 480px;
@@ -52,15 +59,6 @@
     justify-content: center;
 
     padding-top: 12px;
-  }
-
-  .join-us-title {
-    color: $pure-white-color;
-    width: 113px;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    font-weight: 700;
   }
 
   .icons-join-us {
@@ -214,7 +212,6 @@
   .address-bottom {
     background-color: $dark-gray-color;
     color: $pure-white-color;
-    padding: 60px 0px 60px 0px;
     font-size: 14px;
     display: flex;
     width: 1200px;
