@@ -1,14 +1,33 @@
-@media screen and (min-width: 360px) {
-  .address-logo {
-    font-family: $Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.17;
-    width: 145px;
+.address-element {
+  color: $pure-white-color;
+  text-decoration: none;
+  color: $gray-color;
+  line-height: 1.17;
+  list-style: none;
+  font-size: 14px;
+}
 
-    &__web {
-      color: $blue-color;
-    }
+.address-element :focus,
+.address-element :hover {
+  color: $blue-color;
+}
+
+.address-logo {
+  color: $pure-white-color;
+  text-decoration: none;
+}
+.address-logo {
+  font-family: $Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  width: 145px;
+
+  &__web {
+    color: $blue-color;
+  }
+
+  @media screen and (min-width: 360px) {
   }
 
   .address-bottom {
@@ -20,31 +39,12 @@
     }
   }
 
-  .address-element {
-    color: $pure-white-color;
-    text-decoration: none;
-    color: $gray-color;
-    line-height: 1.17;
-    list-style: none;
-    font-size: 14px;
-  }
-
-  .address-logo {
-    color: $pure-white-color;
-    text-decoration: none;
-  }
-
   .address-link-phone-mail {
     list-style: none;
     gap: 9px;
     flex-direction: column;
     display: block;
     padding-left: 0px;
-  }
-
-  .address-element :focus,
-  .address-element :hover {
-    color: $blue-color;
   }
 
   .join-us {
@@ -220,15 +220,6 @@
     width: 1200px;
   }
 
-  .address-element {
-    color: $pure-white-color;
-    text-decoration: none;
-    color: $gray-color;
-    line-height: 1.17;
-    list-style: none;
-    font-size: 14px;
-  }
-
   .address-logo {
     color: $pure-white-color;
     text-decoration: none;
@@ -240,11 +231,6 @@
     flex-direction: column;
     display: flex;
     padding-left: 0px;
-  }
-
-  .address-element :focus,
-  .address-element :hover {
-    color: $blue-color;
   }
 
   .join-us {
