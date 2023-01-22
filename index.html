@@ -87,7 +87,7 @@
       </div>
       <main>
         <section class="banner section">
-          <div class="container">
+          <div class="banner_container container">
             <div class="banner__title">
               <h1 class="banner__title-solutions">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
               <input
@@ -241,12 +241,38 @@
             <h2 class="team-title">Nasz zespół</h2>
             <ul class="team-list">
               <li class="team-list-card">
-                <img
-                  src="images/team/johndoered.jpg"
-                  alt="facet w bordowej koszuli"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desktop/JD-Red-desktop.jpg    1x,
+                      ./images/team/desktop/JD-Red-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/JD-Red-tablet.jpg    1x,
+                      ./images/team/tablet/JD-Red-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mobile/JD-Red-mobile.jpg    1x,
+                      ./images/team/mobile/JD-Red-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/team/mobile/JD-Red-mobile.jpg"
+                    alt="Clement Goodman - Product Designer"
+                    width="450"
+                  />
+                </picture>
+
                 <div class="team-list-item">
                   <h4 class="team-list-title">Clement Goodman</h4>
                   <p class="team-list-paragraf">Product Designer</p>
@@ -278,7 +304,37 @@
                 </div>
               </li>
               <li class="team-list-card">
-                <img src="images/team/johndoewoman.jpg" alt="kobieta" width="270" height="260" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desktop/JD-Woman-desktop.jpg    1x,
+                      ./images/team/desktop/JD-Woman-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/JD-Woman-tablet.jpg    1x,
+                      ./images/team/tablet/JD-Woman-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mobile/JD-Woman-mobile.jpg    1x,
+                      ./images/team/mobile/JD-Woman-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team/mobile/JD-Woman-mobile.jpg"
+                    alt="Shannon Boyd - Frontend Developer"
+                    width="450"
+                  />
+                </picture>
                 <div class="team-list-item">
                   <h4 class="team-list-title">Shannon Boyd</h4>
                   <p class="team-list-paragraf">Frontend Developer</p>
@@ -310,12 +366,37 @@
                 </div>
               </li>
               <li class="team-list-card">
-                <img
-                  src="images/team/johndoeblue.jpg"
-                  alt="facet w niebieskiej koszuli"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desktop/JD-Blue-desktop.jpg    1x,
+                      ./images/team/desktop/JD-Blue-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/JD-Blue-tablet.jpg    1x,
+                      ./images/team/tablet/JD-Blue-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mobile/JD-Blue-mobile.jpg    1x,
+                      ./images/team/mobile/JD-Blue-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team/mobile/JD-Blue-mobile.jpg"
+                    alt="John Doe - Marketing"
+                    width="450"
+                  />
+                </picture>
                 <div class="team-list-item">
                   <h4 class="team-list-title">Rocky Bishop</h4>
                   <p class="team-list-paragraf">Marketing</p>
@@ -348,12 +429,37 @@
               </li>
 
               <li class="team-list-card">
-                <img
-                  src="images/team/johndoeblack.jpg"
-                  alt="facet w czarnej koszuli"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desktop/JD-Black-desktop.jpg    1x,
+                      ./images/team/desktop/JD-Black-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tablet/JD-Black-tablet.jpg    1x,
+                      ./images/team/tablet/JD-Black-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mobile/JD-Black-mobile.jpg    1x,
+                      ./images/team/mobile/JD-Black-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team/mobile/JD-Black-mobile.jpg"
+                    alt="John Doe - UI Designer"
+                    width="450"
+                  />
+                </picture>
                 <div class="team-list-item">
                   <h4 class="team-list-title">Harlan Gilbert</h4>
                   <p class="team-list-paragraf">UI Designer</p>

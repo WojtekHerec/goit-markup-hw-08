@@ -1,52 +1,78 @@
-@media screen and (min-width: 360px) and (max-width: 1200px) {
+.banner {
+  background-color: $dark-gray-color;
+  &__title-order-button {
+    color: $pure-white-color;
+    background-color: $blue-color;
+    padding: 10px 41px 10px 41px;
+    width: 200px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  &__title-solutions {
+    color: $pure-white-color;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    line-height: 1.36;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
   .banner {
-    background-color: $dark-gray-color;
-    height: 600px;
-    background-image: url('../images/background.jpg');
+    width: 480px;
+    height: 400px;
+    background-image: url('../images/background/mobile/background-mobile.jpg');
+    background-image: linear-gradient(to top black);
+
+    &__title-order-button {
+      margin: 30px 140px 58px 140px;
+    }
+    &__title-solutions {
+      width: 365px;
+      font-size: 26px;
+      line-height: 1.36;
+      margin: 0px 58px;
+      padding-top: 58px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .banner {
+    width: 768px;
+    height: 400px;
+    background-image: url('../images/background/tablet/background-tablet.jpg');
     background-image: linear-gradient(to top black);
 
     &__title-solutions {
-      color: $pure-white-color;
-      text-align: center;
-      letter-spacing: 0.06em;
       width: 365px;
-      font-weight: 900;
       font-size: 26px;
       line-height: 1.36;
-      margin: 0px 202px;
-      padding-top: 106px;
+      margin: 0px 201px;
+      padding-top: 118px;
     }
 
     &__title-order-button {
-      color: $pure-white-color;
-      background-color: $blue-color;
-      margin: 30px 485px 200px 485px;
-      padding: 10px 41px 10px 41px;
-      width: 200px;
-
-      border: 0px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
+      margin: 30px 284px 118px 284px;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .banner {
-    background-color: $dark-gray-color;
+    width: 1200px;
     height: 600px;
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/background/desktop/background-desktop.jpg');
     background-image: linear-gradient(to top black);
 
     &__title-solutions {
-      color: $pure-white-color;
-      text-align: center;
-      letter-spacing: 0.06em;
       width: 696px;
-      font-weight: 900;
+
       font-size: 44px;
       line-height: 1.36;
       margin: 0px 237px;
@@ -54,18 +80,7 @@
     }
 
     &__title-order-button {
-      color: $pure-white-color;
-      background-color: $blue-color;
       margin: 30px 485px 200px 485px;
-      padding: 10px 41px 10px 41px;
-      width: 200px;
-
-      border: 0px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
     }
   }
 }
