@@ -1,0 +1,22 @@
+.second-header {
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
+
+.third-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
